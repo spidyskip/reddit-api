@@ -1,7 +1,7 @@
 # test_generator_id.py
 
 from datetime import datetime
-from reddit_api.generator_id import GeneratorID
+from reddit_api.tools import GeneratorID
 
 def test_id_number_generator():
     generated_id = GeneratorID.id_number_generator()
