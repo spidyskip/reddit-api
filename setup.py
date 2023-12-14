@@ -4,11 +4,12 @@ reddit-api
 
 from setuptools import setup, find_packages
 from os.path import dirname, join
+import io
 
 curdir = dirname(__file__)
-with open(join(curdir, "README.md"), encoding="utf-8") as fd:
+with io.open(join(curdir, "README.md"), encoding="utf-8") as fd:
     readme = fd.read()
-with open(join(curdir, "CHANGELOG.md"), encoding="utf-8") as fd:
+with io.open(join(curdir, "CHANGELOG.md"), encoding="utf-8") as fd:
     changelog = fd.read()
 
 
