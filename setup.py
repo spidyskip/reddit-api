@@ -5,6 +5,8 @@ setup(
     version='0.1',
     packages=find_packages(where='src'),
     description='Reddit API for Airflow',
+    long_description=readme + "\n\n" + changelog,
+    long_description_content_type='text/markdown',
     author='Unknwon',
     install_requires=[
         'praw',
