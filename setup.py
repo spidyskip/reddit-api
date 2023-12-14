@@ -11,7 +11,7 @@ LONG_DESCRIPTION = 'reddit-api is a open source package that manipulate RedditAP
 
 def get_version():
     # Read the file and return the version
-    with open(f"{PATH_MODULES}/_version.py") as f:
+    with open(f"{PATH_MODULES}/__init__.py") as f:
         version = re.search(r'__version__ = "([^"]+)"', f.read())
         if version:
             return version.group(1)
@@ -23,7 +23,7 @@ version = get_version()
 
 setup(
     name=NAME,
-    version='0.3',
+    version=version,
     packages=find_packages(where='src'),
     description='Reddit API for Airflow',
     long_description=LONG_DESCRIPTION,
