@@ -3,14 +3,11 @@ reddit-api
 """
 
 from setuptools import setup, find_packages
-from os.path import dirname, join
-import io
 
-curdir = dirname(__file__)
-with io.open(join(curdir, "README.md"), encoding="utf-8") as fd:
-    readme = fd.read()
-with io.open(join(curdir, "CHANGELOG.md"), encoding="utf-8") as fd:
-    changelog = fd.read()
+LONG_DESCRIPTION = """
+reddit-api is a open source package that 
+manipulate RedditAPI output and use it in ETL tasks
+"""
 
 
 setup(
@@ -18,8 +15,7 @@ setup(
     version='0.1',
     packages=find_packages(where='src'),
     description='Reddit API for Airflow',
-    long_description=readme + "\n\n" + changelog,
-    long_description_content_type='text/markdown',
+    long_description=LONG_DESCRPTION
     author='Unknwon',
     install_requires=[
         'praw',
