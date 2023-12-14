@@ -1,5 +1,12 @@
 from setuptools import setup, find_packages
 
+curdir = dirname(__file__)
+with io.open(join(curdir, "README.md"), encoding="utf-8") as fd:
+    readme = fd.read()
+with io.open(join(curdir, "CHANGELOG.md"), encoding="utf-8") as fd:
+    changelog = fd.read()
+
+
 setup(
     name='reddit_api',
     version='0.1',
