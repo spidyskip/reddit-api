@@ -9,13 +9,19 @@ LONG_DESCRIPTION = 'reddit-api is a open source package that manipulate RedditAP
 
 setup(
     name='reddit_api',
-    version='0.2',
+    version='0.3',
     packages=find_packages(where='src'),
     description='Reddit API for Airflow',
     long_description=LONG_DESCRIPTION,
     author='Unknwon',
     install_requires=[
         'praw',
+        'yake',
+        'pandas',
+        'praw',
+        'yake',
+        'pyarrow',
+        'colorlog'
     ],
     extras_require={
         'dev': [
