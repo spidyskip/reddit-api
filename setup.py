@@ -11,7 +11,7 @@ LONG_DESCRIPTION = 'reddit-api is a open source package that manipulate RedditAP
 
 def get_version():
     # Read the file and return the version
-    with open(f"{PATH_MODULES}/__init__.py") as f:
+    with open(f"{PATH_MODULES}/_version.py") as f:
         version = re.search(r'__version__ = "([^"]+)"', f.read())
         if version:
             return version.group(1)
