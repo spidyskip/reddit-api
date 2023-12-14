@@ -4,10 +4,7 @@ reddit-api
 
 from setuptools import setup, find_packages
 
-LONG_DESCRIPTION = """
-reddit-api is a open source package that 
-manipulate RedditAPI output and use it in ETL tasks
-"""
+LONG_DESCRIPTION = 'reddit-api is a open source package that manipulate RedditAPI output and use it in ETL tasks'
 
 
 setup(
