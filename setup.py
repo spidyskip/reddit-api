@@ -1,4 +1,9 @@
+"""
+reddit-api
+"""
+
 from setuptools import setup, find_packages
+from os.path import dirname, join
 
 curdir = dirname(__file__)
 with io.open(join(curdir, "README.md"), encoding="utf-8") as fd:
