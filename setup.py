@@ -6,9 +6,9 @@ from setuptools import setup, find_packages
 from os.path import dirname, join
 
 curdir = dirname(__file__)
-with io.open(join(curdir, "README.md"), encoding="utf-8") as fd:
+with open(join(curdir, "README.md"), encoding="utf-8") as fd:
     readme = fd.read()
-with io.open(join(curdir, "CHANGELOG.md"), encoding="utf-8") as fd:
+with open(join(curdir, "CHANGELOG.md"), encoding="utf-8") as fd:
     changelog = fd.read()
 
 
