@@ -1,3 +1,3 @@
 # __init__.py
 
-from .reddit_api import RedditApi
+from .generator_id import GeneratorID
