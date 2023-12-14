@@ -9,7 +9,7 @@ LONG_DESCRIPTION = 'reddit-api is a open source package that manipulate RedditAP
 
 setup(
     name='reddit_api',
-    version='0.1',
+    version='0.2',
     packages=find_packages(where='src'),
     description='Reddit API for Airflow',
     long_description=LONG_DESCRIPTION,
